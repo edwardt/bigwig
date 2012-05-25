@@ -376,6 +376,8 @@ pid_info({P}) ->
         end,
     L1 =
         case process_info(P, current_function) of
+			%%when P is bigwig_http , process_info will be return {current_function, undefined},when bigwig start
+            {current_function, undefined} -> [{cf, "undefined"}];
             {current_function, CMfa} -> [{cf, tuple_to_list(CMfa)}];
             _ -> []
         end,
