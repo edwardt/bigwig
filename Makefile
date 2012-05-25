@@ -6,6 +6,7 @@ REBAR = ./rebar
 all: app
 
 app:
+	@$(REBAR) get-deps
 	@$(REBAR) compile
 
 clean:
