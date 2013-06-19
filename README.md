@@ -18,8 +18,14 @@ Start up the dev server and head to http://localhost:40829/
 *** You probably need to get ranch for cowboy deps seperately 
     or write a precompile rebar hook to do that. 
     ranch is not rebar compliant but uses Make, Emakefile.
+ 
+    just ./start-dev.sh (it will get-deps, 
+			 compile deps, 
+			 compile 
+			 and start boot)   
 
-    ./rebar get-deps
+    
+    ./rebar get-deps  <<<----already incorporate into make step, 
     ./start-dev.sh
 
 or include as a rebar dep and start your own node:
