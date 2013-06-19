@@ -15,6 +15,9 @@ Conceived for Spawnfest 2011, SMELLS LIKE BEAM SPIRIT.
 USAGE
 =====
 Start up the dev server and head to http://localhost:40829/
+*** You probably need to get ranch for cowboy deps seperately 
+    or write a precompile rebar hook to do that. 
+    ranch is not rebar compliant but uses Make, Emakefile.
 
     ./rebar get-deps
     ./start-dev.sh
