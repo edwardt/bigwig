@@ -2,6 +2,7 @@
 -export([start/0, stop/0]).
 
 start() ->
+
     ok = start(crypto),
     ok = start(sasl),
     ok = start(cowboy),

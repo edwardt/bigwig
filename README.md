@@ -122,3 +122,8 @@ Erlang topology
 Run Bigwig as a hidden node, on a distinct VM, and it will connect to nodes of
 your chosing to monitor/examine. No need to install any applications or releases
 on nodes you wish to inspect.
+=======
+* Repair bigwig_report_reader:ascii_format_report
+* Repair (or implement?) index page system info on a left panel
+* Implement connection to other nodes
+* Maybe other features
