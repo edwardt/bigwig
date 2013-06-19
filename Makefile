@@ -8,6 +8,9 @@ all: app
 app:
 	@$(REBAR) compile
 
+get-deps:
+	@$(REBAR) get-deps
+
 clean:
 	@$(REBAR) clean
 	rm -f erl_crash.dump
